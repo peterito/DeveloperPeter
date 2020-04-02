@@ -394,7 +394,14 @@ header {
 .portfolio__item {
     background: var(--clr-accent);
     overflow: hidden;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align:center;
+    text-decoration: none;
+    position: relative;
 }
+
 
 .portfolio__img {
     transition: 
@@ -410,9 +417,40 @@ header {
 .portfolio__img:hover,
 .portfolio__item:focus .portfolio__img {
     transform: scale(1.2);
-    opacity: .5;
+    opacity: .5; 
+    cursor: pointer;
+    text-align:center;
 }
-
+.portfolio__img .fadedbox {
+    background-color: #666666;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    opacity: 0;
+    width: 360px;
+    height: 100px;
+    padding: 130px 20px;
+    }
+    
+    .portfolio__img .title {
+    font-size: 2.5em;
+    text-transform: uppercase;
+    opacity: 0;
+    transition-delay: 0.2s;
+    transition-duration: 0.3s;
+    }
+    .portfolio__img:hover .title,
+    .portfolio__img:focus .title {
+    opacity: 1;
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    }
 
 /* footer */
 
