@@ -290,12 +290,13 @@ header {
 /*  My services section  */
 
 .my-services {
-    background-color: var(--clr-dark);
-    background-image: url(../img/background_1.jpg);
+    background-image:linear-gradient( rgb(1, 15, 14), hsla(0, 0%, 3%, 0.829)), url(../img/back-2.jpg);
     background-size: cover;
     background-blend-mode: multiply;
     color: var(--clr-light);
     text-align: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 .section__title--services {
@@ -380,10 +381,13 @@ header {
 /* My Work */
 
 .my-work {
-    background-image: url(../img/services-bg.jpg);
+    background-image: linear-gradient(rgba(11, 77, 68, 0.719), rgba(22, 59, 94, 0.7)), url(../img/project-imageCover.jpg);
     background-color: var(--clr-dark);
     color: var(--clr-light);
-    text-align: center;    
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
 }
 
 .portfolio {
@@ -421,36 +425,6 @@ header {
     cursor: pointer;
     text-align:center;
 }
-.portfolio__img .fadedbox {
-    background-color: #666666;
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: #fff;
-    -webkit-transition: all 300ms ease-out;
-    -moz-transition: all 300ms ease-out;
-    -o-transition: all 300ms ease-out;
-    -ms-transition: all 300ms ease-out;
-    transition: all 300ms ease-out;
-    opacity: 0;
-    width: 360px;
-    height: 100px;
-    padding: 130px 20px;
-    }
-    
-    .portfolio__img .title {
-    font-size: 2.5em;
-    text-transform: uppercase;
-    opacity: 0;
-    transition-delay: 0.2s;
-    transition-duration: 0.3s;
-    }
-    .portfolio__img:hover .title,
-    .portfolio__img:focus .title {
-    opacity: 1;
-    transform: translateY(0px);
-    -webkit-transform: translateY(0px);
-    }
 
 /* footer */
 
