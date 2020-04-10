@@ -528,7 +528,7 @@ header {
 }
 
 .footer__link:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .social-list {
