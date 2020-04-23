@@ -546,3 +546,8 @@ header {
 .social-list__link {
     padding: .5em;
 }
+.copyright{
+    color: aqua;
+    font-size: 15px;
+
+}
